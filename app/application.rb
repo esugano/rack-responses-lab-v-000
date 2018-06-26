@@ -2,7 +2,7 @@ require 'pry'
 
 class Application
 
-  def call(time)
+  def call
     binding.pry
     resp = Rack::Response.new
     if time.hour < 12

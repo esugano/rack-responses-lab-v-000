@@ -1,6 +1,7 @@
 class Application
 
   def call(time)
+    binding.pry
     resp = Rack::Response.new
     if time.hour < 12
       resp.write "Good Morning!"
